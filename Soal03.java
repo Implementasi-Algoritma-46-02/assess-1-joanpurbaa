@@ -31,15 +31,19 @@ public class Soal03 {
 
 			if((menit + tambahanMenit) == 60){
 				if(jam < 10){
-					System.err.println("0" + jam + 1 + ":" + "00");
+					System.err.println("0" + (jam + 1) + ":" + "00");
+					System.err.println("(karena " + jam + ":" + menit + " ditambah " + menit + " menit = " + "0" + (jam + 1) + ":" + "00" + ")");
 				} else {
 					System.err.println(jam + 1 + ":" + "00");
+					System.err.println("(karena " + jam + ":" + menit + " ditambah " + menit + " menit = " + (jam + 1) + ":" + "00" + ")");
 				}
 			} else if((menit + tambahanMenit) >= 60){
 				if(jam < 10){
 					System.out.println("0" + (jam + 1) + ":" + (tambahanMenit - menit));
+					System.err.println("(karena " + jam + ":" + menit + " ditambah " + menit + " menit = " + "0" + (jam + 1) + ":" + (tambahanMenit - menit) + ")");
 				} else {
 					System.out.println(jam + 1 + ":" + (tambahanMenit - menit));
+					System.err.println("(karena " + jam + ":" + menit + " ditambah " + menit + " menit = " + (jam + 1) + ":" + (tambahanMenit - menit) + ")");
 				}
 			}
 			
