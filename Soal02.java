@@ -18,13 +18,13 @@ public class Soal02 {
 			String lomba = eprtHkiLomba[2];
 
 			if(studi != 3.0){
-				System.out.println("Tidak cumlaude");
+				System.out.println("Tidak Cumlaude");
 			} else if(ipk < 3.5){
-				System.out.println("Tidak cumlaude");
+				System.out.println("Tidak Cumlaude");
 			} else if(eprt <= 449){
-				System.out.println("Tidak cumlaude");
+				System.out.println("Tidak Cumlaude");
 			} else if(eprt <= 449 && !hki.equals("ada")){
-				System.out.println("Tidak cumlaude");
+				System.out.println("Tidak Cumlaude");
 			} else if(!hki.equals("ada") || !lomba.equals("ada")){
 				System.out.println("Cumlaude");
 			} else {
