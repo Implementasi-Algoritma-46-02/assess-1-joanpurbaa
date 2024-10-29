@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: 
+Nama: Joan Orlando Purba
 
-NIM : 
+NIM : 607062400007
 
 ## Instruksi
 
