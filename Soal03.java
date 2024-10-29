@@ -32,8 +32,8 @@ public class Soal03 {
 					System.out.println("0" + (jam + 1) + ":" + (menit - tambahanMenit));
 					System.out.println("(karena " + jam + ":" + menit + " ditambah " + menit + " menit = " + "0" + (jam + 1) + ":" + (tambahanMenit - menit) + ")");
 				} else {
-					System.out.println(jam + 1 + ":" + (menit - tambahanMenit));
-					System.out.println("(karena " + jam + ":" + menit + " ditambah " + menit + " menit = " + (jam + 1) + ":" + (tambahanMenit - menit) + ")");
+					System.out.println(jam + ":" + (menit + tambahanMenit));
+					System.out.println("(karena " + jam + ":" + menit + " ditambah " + menit + " menit = " + jam + ":" + (tambahanMenit + menit) + ")");
 				}
 			}
 			
