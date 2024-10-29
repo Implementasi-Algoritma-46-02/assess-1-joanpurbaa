@@ -11,22 +11,38 @@ public class Soal03 {
 			int menit = Integer.parseInt(jamMenitMenitDitambah[1]);
 			int tambahanMenit = Integer.parseInt(jamMenitMenitDitambah[2]);
 
-			String formatjam = jam + ":" + menit;
+			String formatJam = jam + ":" + menit;
 
-			if((menit + tambahanMenit) > 60){
+			// if((menit + tambahanMenit) > 60){
+			// 	if(jam < 10){
+			// 		System.err.println("0" + (jam + 1) + ":" + (tambahanMenit - menit) + "\n(karena " + formatJam+" ditambah " + menit + " menit = " + "0" + (jam + 1) + ":" + (tambahanMenit - menit) + ")");
+			// 	} else {
+			// 		System.err.println((jam + 1) + ":" + (tambahanMenit - menit) + "\n(karena " + formatJam+" ditambah " + menit + " menit = " + (jam + 1) + ":" + (tambahanMenit - menit) + ")");
+			// 	}
+			// } else {
+			// 	if(jam < 10){
+			// 		System.err.println("0" + jam + ":" + (menit + tambahanMenit) + "\n(karena " + formatJam+" ditambah " + menit + " menit = " + "0" + jam + ":" + (menit + tambahanMenit) + ")");
+			// 	} else {
+			// 		System.err.println(jam + ":" + (menit + tambahanMenit) + "\n(karena " + formatJam+" ditambah " + menit + " menit = " + jam + ":" + (menit + tambahanMenit) + ")");
+			// 	}
+			// }
+
+			System.err.println(jam + ":" + (menit + tambahanMenit));
+
+			if((menit + tambahanMenit) == 60){
 				if(jam < 10){
-					System.err.println("0" + (jam + 1) + ":" + (tambahanMenit - menit) + "\n(karena " + formatjam+" ditambah " + menit + " menit = " + "0" + (jam + 1) + ":" + (tambahanMenit - menit) + ")");
+					System.err.println("0" + jam + 1 + ":" + "00");
 				} else {
-					System.err.println((jam + 1) + ":" + (tambahanMenit - menit) + "\n(karena " + formatjam+" ditambah " + menit + " menit = " + (jam + 1) + ":" + (tambahanMenit - menit) + ")");
+					System.err.println(jam + 1 + ":" + "00");
 				}
-			} else {
+			} else if((menit + tambahanMenit) >= 60){
 				if(jam < 10){
-					System.err.println("0" + jam + ":" + (menit + tambahanMenit) + "\n(karena " + formatjam+" ditambah " + menit + " menit = " + "0" + jam + ":" + (menit + tambahanMenit) + ")");
+					System.out.println("0" + (jam + 1) + ":" + (tambahanMenit - menit));
 				} else {
-					System.err.println(jam + ":" + (menit + tambahanMenit) + "\n(karena " + formatjam+" ditambah " + menit + " menit = " + jam + ":" + (menit + tambahanMenit) + ")");
+					System.out.println(jam + 1 + ":" + (tambahanMenit - menit));
 				}
 			}
-
+			
 		}
 	}
 }
