@@ -12,11 +12,39 @@ public class Soal04 {
 
 			switch (pekerjaan) {
 				case "DES":
-					System.out.println((jamKerja * 30000) + 600000);
+					if(jamKerja > 160 && jamKerja <= 175){
+						System.out.println(jamKerja * (30000 + (5 * 30000 / 100)) + 600000);
+					} else if(jamKerja > 175) {
+						System.out.println(jamKerja * (30000 + (7 * 30000 / 100)) + 600000);
+					} else {
+						System.out.println((jamKerja * 30000) + 600000);
+					}
 					break;
 				case "PRG":
-					if(jamKerja > 160){
-						System.out.println((jamKerja * (5 * 30000 / 100)) + 1200000);
+					if(jamKerja > 160 && jamKerja <= 175){
+						System.out.println(jamKerja * (30000 + (5 * 30000 / 100)) + 1200000);
+					} else if(jamKerja > 175) {
+						System.out.println(jamKerja * (30000 + (7 * 30000 / 100)) + 1200000);
+					} else {
+						System.out.println((jamKerja * 30000) + 1200000);
+					}
+					break;
+				case "WRT":
+					if(jamKerja > 160 && jamKerja <= 175){
+						System.out.println(jamKerja * (30000 + (5 * 30000 / 100)) + 400000);
+					} else if(jamKerja > 175) {
+						System.out.println(jamKerja * (30000 + (7 * 30000 / 100)) + 400000);
+					} else {
+						System.out.println((jamKerja * 30000) + 400000);
+					}
+					break;
+				case "MKT":
+					if(jamKerja > 160 && jamKerja <= 175){
+						System.out.println(jamKerja * (30000 + (5 * 30000 / 100)) + 500000);
+					} else if(jamKerja > 175) {
+						System.out.println(jamKerja * (30000 + (7 * 30000 / 100)) + 500000);
+					} else {
+						System.out.println((jamKerja * 30000) + 500000);
 					}
 					break;
 				default:
